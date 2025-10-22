@@ -1,11 +1,12 @@
 import { Mail, Phone, Instagram, MapPin } from "lucide-react";
 import logoMB from "@/assets/logo-mb.png";
+import doctorProfile from "@/assets/doctor-profile.jpg";
 
 export const Footer = () => {
   return (
     <footer id="contato" className="bg-primary text-primary-foreground py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Logo and About */}
           <div className="space-y-4">
             <img src={logoMB} alt="Dr. Murilo Bezerra Logo" className="h-16" />
@@ -75,6 +76,15 @@ export const Footer = () => {
                 <span>Atendimento Online</span>
               </div>
             </div>
+          </div>
+
+          {/* Doctor Photo */}
+          <div className="flex items-center justify-center">
+            <img 
+              src={doctorProfile} 
+              alt="Dr. Murilo Bezerra" 
+              className="w-48 h-48 object-cover rounded-lg shadow-elegant"
+            />
           </div>
         </div>
 
