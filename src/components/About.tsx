@@ -1,5 +1,6 @@
-import { Award, GraduationCap } from "lucide-react";
+import { Award, GraduationCap, MessageCircle } from "lucide-react";
 import doctorProfile from "@/assets/doctor-profile.jpg";
+import { Button } from "@/components/ui/button";
 
 export const About = () => {
   return (
@@ -51,6 +52,25 @@ export const About = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+              
+              {/* CTA Button */}
+              <div className="mt-8 flex justify-center">
+                <Button 
+                  variant="default" 
+                  size="lg"
+                  asChild
+                  className="bg-gold text-primary hover:bg-gold-dark shadow-gold"
+                >
+                  <a 
+                    href="https://wa.me/5521972366819?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Murilo%20Bezerra"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Agende sua Consulta
+                  </a>
+                </Button>
               </div>
             </div>
 
