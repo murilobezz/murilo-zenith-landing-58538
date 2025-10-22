@@ -24,7 +24,11 @@ export const CTABanner = () => {
             asChild
             className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-elegant"
           >
-            <a href="#contato">
+            <a 
+              href="https://wa.me/5521972366819?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Murilo%20Bezerra"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <MessageCircle className="w-5 h-5" />
               Quero agendar minha consulta agora
             </a>
